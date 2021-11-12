@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import {Container} from 'react-bootstrap';
+import { flushSync } from 'react-dom';
 import './App.css';
 
 
@@ -48,10 +49,14 @@ import './App.css';
 //     }
 // }
 
+const calcValue = () => {
+    console.log('random')
+    return Math.random() * (50 - 1) + 1;
+}
 
 const Slider = (props) => {
 
-    const [slide, setSlide] = useState(0);
+    const [slide, setSlide] = useState(calcValue);
     const [autoplay, setAutoplay] = useState(false);
 
     function changeSlide(i) {
