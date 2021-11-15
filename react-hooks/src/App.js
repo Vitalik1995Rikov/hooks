@@ -1,6 +1,6 @@
-import {Component, useState} from 'react';
+import {Component} from 'react';
 import {Container} from 'react-bootstrap';
-import { flushSync } from 'react-dom';
+// import { flushSync } from 'react-dom';
 import './App.css';
 
 
@@ -12,6 +12,10 @@ class Slider extends Component {
             autoplay: false,
             slide: 0
         }
+    }
+
+    componentDidMount() {
+        document.title = ''
     }
 
     changeSlide = (i) => {
