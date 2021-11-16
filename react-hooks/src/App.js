@@ -67,9 +67,9 @@ const Slider = (props) => {
     const [autoplay, setAutoplay] = useState(false);
 
 
-    function logging() {
-        console.log('log!')
-    }
+    // function logging() {
+    //     console.log('log!')
+    // }
 
     useEffect(() => {
         console.log('effect');
