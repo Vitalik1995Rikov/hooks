@@ -67,8 +67,9 @@ const Slider = (props) => {
     const [autoplay, setAutoplay] = useState(false);
 
     useEffect(() => {
+        console.log('effect');
         document.title = `Slide: ${slide}`
-    });
+    }, [slide]);
 
     function changeSlide(i) {
         setSlide(slide => slide + i);
