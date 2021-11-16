@@ -15,7 +15,7 @@ const Slider = (props) => {
             "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
             "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg"
         ]
-    }, [slide]);
+    }, []);
 
     // function logging() {
     //     console.log('log!')
