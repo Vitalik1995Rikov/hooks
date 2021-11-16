@@ -74,11 +74,15 @@ const Slider = (props) => {
     useEffect(() => {
         console.log('effect');
         document.title = `Slide: ${slide}`;
-        window.addEventListener('click', logging);
-        return () => {
-            window.removeEventListener('click', logging);
-        }
+        // window.addEventListener('click', logging);
+        // return () => {
+        //     window.removeEventListener('click', logging);
+        // }
     }, [slide]);
+
+    useEffect(() => {
+        console.log('autoplay');
+    }, [autoplay])
 
     function changeSlide(i) {
         setSlide(slide => slide + i);
