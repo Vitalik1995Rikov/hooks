@@ -2,7 +2,10 @@ import {useEffect, useState, useCallback} from 'react';
 import {Container} from 'react-bootstrap';
 import './App.css';
 
-
+const countTotal = (num) => {
+    console.log('counting');
+    return num + 10;
+}
 
 const Slider = (props) => {
 
@@ -41,6 +44,9 @@ const Slider = (props) => {
     function toggleAutoplay() {
         setAutoplay(autoplay => !autoplay);
     }
+
+
+    const total = countTotal(slide);
 
     return (
         <Container>
