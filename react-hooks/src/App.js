@@ -24,14 +24,14 @@ const Slider = (props) => {
     //     console.log('log!')
     // }
 
-    useEffect(() => {
-        console.log('effect');
-        document.title = `Slide: ${slide}`;
+    // useEffect(() => {
+    //     console.log('effect');
+    //     document.title = `Slide: ${slide}`;
         // window.addEventListener('click', logging);
         // return () => {
         //     window.removeEventListener('click', logging);
         // }
-    }, [slide]);
+    // }, [slide]);
 
     // useEffect(() => {
     //     console.log('autoplay');
