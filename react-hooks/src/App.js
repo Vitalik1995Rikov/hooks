@@ -1,4 +1,4 @@
-import {useEffect, useState, useCallback} from 'react';
+import {useEffect, useState, useCallback, useMemo} from 'react';
 import {Container} from 'react-bootstrap';
 import './App.css';
 
@@ -46,7 +46,9 @@ const Slider = (props) => {
     }
 
 
-    const total = countTotal(slide);
+    const total = useMemo(() => {
+        return countTotal(slide);
+    }, [slide]);
 
     return (
         <Container>
