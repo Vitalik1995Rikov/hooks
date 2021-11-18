@@ -50,9 +50,9 @@ const Slider = (props) => {
         return countTotal(slide);
     }, [slide]);
 
-    const style = {
-        color: slide > 4 ? 'red' : 'black'
-    }
+    const style = useMemo(() => ({
+            color: slide > 4 ? 'red' : 'black'
+    }), [slide])
 
     useEffect(() => {
         console.log('styles')
