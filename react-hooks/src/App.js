@@ -1,9 +1,10 @@
 import React from 'react';
+import { Rectangle } from './components/Rectangle/Rectangle';
 
 const App = (props) => {
     return (
         <div>
-            App
+            <Rectangle/>
         </div>
     )
 }

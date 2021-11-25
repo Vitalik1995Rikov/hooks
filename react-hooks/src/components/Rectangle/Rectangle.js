@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './Rectangle.module.css';
 
 const Rectangle = (props) => {
     const style = {
@@ -8,7 +9,7 @@ const Rectangle = (props) => {
     }
 
     return (
-        <div style={style}>
+        <div style={style} className={styles.wrapper}>
             Rectangle
         </div>
     )
