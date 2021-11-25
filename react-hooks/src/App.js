@@ -4,7 +4,10 @@ import { Rectangle } from './components/Rectangle/Rectangle';
 const App = (props) => {
     return (
         <div>
-            <Rectangle/>
+            <Rectangle
+            top={80}
+            left={80}
+            />
         </div>
     )
 }
