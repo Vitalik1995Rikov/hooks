@@ -1,29 +1,14 @@
-import React, {useState} from 'react';
-import { Rectangle } from '../Rectangle/Rectangle';
-import styles from './App.module.css';
+import React from "react";
+import { store } from '../../store';
+
 
 const App = (props) => {
-
-    const [top, setTop] = useState(10);
-    const [left, setLeft] = useState(10);
-
-    function handleMouseMove(e) {
-        const { movementX, movementY } = e;
-        
-        console.log()
-        setLeft(left + movementX);
-        setTop(top + movementY);
-    }
-
     return (
-        <div className={styles.wrapper}
-            onMouseMove={handleMouseMove}>
-            <Rectangle
-            top={top}
-            left={left}
-            />
+        <div>
+            <button onClick={() => store.dispatch({type: 'INCREMENT'})}>INCREMENT</button>
+            <button onClick={() => store.dispatch({type: 'DECREMENT'})}>DECREMENT</button>
         </div>
     )
-}
+} 
 
 export default App;
