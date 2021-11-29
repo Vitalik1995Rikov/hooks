@@ -9,8 +9,8 @@ const App = (props) => {
             <p>
                 {state.user.balance}
             </p>
-            <button onClick={() => store.dispatch({type: 'CHANGE_BALANCE', payload: {balance: 5000}})}>CHANGE_BALANCE</button>
-            <button onClick={() => store.dispatch({type: 'ADD_ORDER'})}>ADD_ORDER</button>
+            <button onClick={() => store.dispatch({type: 'CHANGE_BALANCE', payload: {balance: 6000}})}>CHANGE BALANCE</button>
+            <button onClick={() => store.dispatch({type: 'ADD_ORDER'})}>ADD ORDER</button>
         </div>
     )
 } 
